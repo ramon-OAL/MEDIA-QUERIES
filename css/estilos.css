@@ -1,0 +1,46 @@
+div{
+    display: flex;
+    justify-content: space-between;   /*la alineación que tenia a la izquierda se va a colocaren el centro, derecha o donde queramos(viene bien para manejar los menus de una página web o una galería de imagenes*/
+}
+.a,.b,.c{
+  
+    width:25%;
+    height:100px;
+    color:white;
+    font-size:4em;
+    text-align: center;      /*para centrar el texto en horizontal*/
+    line-height: 100px;     /*para centrar el texto en vertical, ("hay que añadir este y el de arriba para que se quede bien centrado")*/
+    float: left;            /*para poner los atributos a la derecha, en vez de uno debajo del otro*/
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+
+.a{
+    background-color: red;
+margin-left: 10px;            /*poner en porcentaje para que cuando se use en una pantalla diferente, se mantenga centrado*/;
+}
+
+.b{
+
+background-color: green;
+}
+
+.c{
+
+background-color: blue;
+}
+
+/*media queries para que se vea los bloques uno debajo del otro en móviles*/
+
+@media (max-width:618px){
+.a,.b,.c{
+    width: 80%;
+    height: 50px;
+    font-size: 2em;
+    line-height: 50px;
+    margin-left: 10%;
+
+}
+
+}
